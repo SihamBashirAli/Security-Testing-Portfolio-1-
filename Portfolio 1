@@ -1,0 +1,53 @@
+# Lab Notebook
+
+- **Student Name:** (name)
+- **Student ID:** (id)
+- **Lab:** (lab)
+- **Date:** (date)
+
+## Introduction
+
+Describe the aim of this lab.
+
+## Agreed scope
+
+Summarise the agreed scope.
+
+## Activity
+
+You might like to include:
+
+- Key points from your scope agreement and how you prepared it.
+- What you did.
+- What tools you used and why.
+- The commands you ran and their ouput, for example:
+
+```command
+sudo nmap -sS -T4 -A -v 127.0.0.1
+```
+
+```command
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-10-02 11:35 BST
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning
+...
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000070s latency).
+All 1000 scanned ports on localhost (127.0.0.1) are closed
+Too many fingerprints match this host to give specific OS details
+...
+Nmap done: 1 IP address (1 host up) scanned in 1.83 seconds
+           Raw packets sent: 1012 (45.668KB) | Rcvd: 2022 (86.616KB)
+```
+
+- What did you learn about the environment from the command(s)?
+- What could you do next to further explore the environment?
+
+## Conclusion
+
+Summarise the lab.
+
+- What did you do?
+- What did you learn?
+- What were your results?
+- What did you take away from the lab?
