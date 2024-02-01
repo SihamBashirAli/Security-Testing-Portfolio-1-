@@ -1,0 +1,105 @@
+# Lab Notebook
+- **Student Name:** [Your Name]
+- **Student ID:** [Your ID]
+- **Lab:** Setting up OWASP Juice Shop Environment
+- **Date:** [Date]
+
+## Requirement 1: Setup Your Security Testing Environment
+
+### Virtual Machine Specifications:
+
+1. **OWASP Juice Shop Virtual Machine:**
+   - **Use Case:** OWASP Juice Shop server
+   - **CPUs:** 2
+   - **RAM:** 2 GB
+   - **Operating System:** Ubuntu 22.04
+   - **Network Adaptor 1:** NAT
+   - **Network Adaptor 2:** 192.168.123.1 (Internal Network)
+   - **Source:** Pre-built, cloned or ISO
+   - **Install Node.js version 16, npm, git:**
+     ```bash
+     sudo apt update
+     sudo apt install -y nodejs npm git
+     ```
+
+   - **Credentials:**
+     - User: student
+     - Password: Student1
+
+   - **Useful Link(s):** [OWASP Juice Shop Documentation](https://owasp.org/www-project-juice-shop/)
+
+2. **Security Testing Workstation Virtual Machine (Kali Linux):**
+   - **Use Case:** Security Testing workstation
+   - **CPUs:** 2
+   - **RAM:** 4 GB
+   - **Operating System:** Kali Linux
+   - **Network Adaptor 1:** NAT
+   - **Network Adaptor 2:** 192.168.123.10 (Internal Network)
+   - **Source:** Pre-built, cloned or ISO
+   - **Credentials:**
+     - User: kali
+     - Password: kali
+
+### Lab Environment Setup:
+
+1. **OWASP Juice Shop VM IP Configuration:**
+   - Open a terminal on the OWASP Juice Shop VM and execute:
+     ```bash
+     sudo nano /etc/netplan/00-installer-config.yaml
+     ```
+
+   - Update the file with the following content:
+     ```yaml
+     network:
+       ethernets:
+         enp0s3:
+           dhcp4: yes
+         enp0s8:
+           addresses: [192.168.123.1/24]
+     ```
+
+   - Save the file and apply the changes:
+     ```bash
+     sudo netplan apply
+     ```
+
+2. **Kali Linux VM IP Configuration:**
+   - Open a terminal on the Kali Linux VM and execute:
+     ```bash
+     sudo nano /etc/netplan/00-installer-config.yaml
+     ```
+
+   - Update the file with the following content:
+     ```yaml
+     network:
+       ethernets:
+         eth0:
+           dhcp4: yes
+         eth1:
+           addresses: [192.168.123.10/24]
+     ```
+
+   - Save the file and apply the changes:
+     ```bash
+     sudo netplan apply
+     ```
+
+3. **Ping Test Between Kali Linux and OWASP Juice Shop:**
+   - On Kali Linux, ping the OWASP Juice Shop VM:
+     ```bash
+     ping 192.168.123.1
+     ```
+
+   - On OWASP Juice Shop VM, ping Kali Linux:
+     ```bash
+     ping 192.168.123.10
+     ```
+
+   - Observe successful ping responses.
+
+### Lab Notebook Conclusion:
+
+The OWASP Juice Shop environment has been successfully set up with the specified IP addresses. Both the OWASP Juice Shop VM and the Kali Linux VM are communicating on the internal network. The next steps involve conducting functionality testing and preparing for security testing as outlined in the lab requirements.
+
+## Next Steps:
+Proceed to Requirement 2 - OWASP Juice Shop Functionality Testing.
