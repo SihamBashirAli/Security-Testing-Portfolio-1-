@@ -1,6 +1,6 @@
 # Lab Notebook
-- **Student Name:** [Your Name]
-- **Student ID:** [Your ID]
+- **Student Name:** Siham Bashir Ali
+- **Student ID:** ALI22603020
 - **Lab:** Exploiting SQL Injection on OWASP Juice Shop
 - **Date:** 15/2/2024
 
@@ -36,5 +36,3 @@
    - Notified instructor of successful SQL Injection exploitation.
    - Provided details of injection points, payloads used, and observed impact.
 
-## Next Steps:
-Proceed to Requirement 5 - Exploit a Broken Access Control vulnerability.
