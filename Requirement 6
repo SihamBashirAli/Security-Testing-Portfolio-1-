@@ -1,0 +1,43 @@
+# Lab Notebook
+- **Student Name:** [Your Name]
+- **Student ID:** [Your ID]
+- **Lab:** Exploiting Broken Authentication on OWASP Juice Shop
+- **Date:** [Date]
+
+## Exploiting Broken Authentication Vulnerability
+
+1. **Research Broken Authentication:**
+   - Reviewed OWASP Broken Authentication documentation for understanding.
+
+2. **Explore the Target Page:**
+   - Visited [https://pwning.owasp-juice.shop/part2/broken-authentication.html](https://pwning.owasp-juice.shop/part2/broken-authentication.html).
+
+3. **Identify Broken Authentication Points:**
+   - Identified login pages and password reset functionalities.
+
+4. **Attempt Default Credentials:**
+   - Attempted to log in using default credentials (e.g., admin/admin).
+   - Checked for any signs of successful authentication.
+
+5. **Brute Force Login:**
+   - Used Hydra to perform a brute force attack on the login page.
+   - Recorded results of successful or unsuccessful attempts.
+
+6. **Check for Weak Password Policies:**
+   - Attempted password reset for known users.
+   - Checked if the application enforces strong password policies.
+
+7. **Session Management:**
+   - Checked for weaknesses in session management, such as session tokens in URLs.
+   - Attempted to manipulate session tokens.
+
+8. **Document Exploitation Process:**
+   - Recorded the steps taken during login attempts and password reset testing.
+   - Documented any successful authentication or session manipulation.
+
+9. **Report Findings:**
+   - Notified instructor of successful Broken Authentication exploitation.
+   - Provided details of authentication points tested, actions attempted, and observed impact.
+
+## Next Steps:
+Proceed to Requirement 7 - Exploit an Improper Input Validation vulnerability.
