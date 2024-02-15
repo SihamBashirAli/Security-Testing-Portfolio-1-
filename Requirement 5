@@ -1,0 +1,39 @@
+# Lab Notebook
+- **Student Name:** [Your Name]
+- **Student ID:** [Your ID]
+- **Lab:** Exploiting Broken Access Control on OWASP Juice Shop
+- **Date:** [Date]
+
+## Exploiting Broken Access Control Vulnerability
+
+1. **Research Broken Access Control:**
+   - Reviewed OWASP Broken Access Control documentation for understanding.
+
+2. **Explore the Target Page:**
+   - Visited [https://pwning.owasp-juice.shop/part2/broken-access-control.html](https://pwning.owasp-juice.shop/part2/broken-access-control.html).
+
+3. **Identify Broken Access Control Points:**
+   - Identified a user profile page as a potential access control point.
+
+4. **Attempt Unauthorized Access:**
+   - Attempted to access user profile pages without proper authorization.
+   - Modified URLs and parameters to bypass access controls.
+
+5. **Observe Effects:**
+   - Observed changes in displayed data and response messages.
+   - Checked for any signs of successful exploitation of Broken Access Control.
+
+6. **Capture Exploitation Process:**
+   - Documented the unauthorized access attempts and modifications made to URLs.
+   - Recorded changes in the application's behavior.
+
+7. **Perform Unauthorized Actions:**
+   - Attempted to manipulate parameters to access other users' data.
+   - Checked for the ability to perform unauthorized actions.
+
+8. **Report Findings:**
+   - Notified instructor of successful Broken Access Control exploitation.
+   - Provided details of access control points tested, actions attempted, and observed impact.
+
+## Next Steps:
+Proceed to Requirement 6 - Exploit an Authentication Bypass vulnerability.
