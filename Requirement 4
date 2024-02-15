@@ -1,0 +1,40 @@
+# Lab Notebook
+- **Student Name:** [Your Name]
+- **Student ID:** [Your ID]
+- **Lab:** Exploiting SQL Injection on OWASP Juice Shop
+- **Date:** 15/2/2024
+
+## Exploiting SQL Injection Vulnerability
+
+1. **Research SQL Injection:**
+   - Reviewed OWASP SQL Injection documentation for understanding.
+
+2. **Explore the Target Page:**
+   - Visited [https://pwning.owasp-juice.shop/part2/injection.html](https://pwning.owasp-juice.shop/part2/injection.html).
+
+3. **Identify SQL Injection Points:**
+   - Identified a login page as a potential input point.
+
+4. **Craft SQL Injection Payloads:**
+   - Prepared payloads including email = `' OR 1=1 --` and password = `a`.
+
+5. **Inject Payloads:**
+   - Injected payloads into the login page.
+
+6. **Observe Effects:**
+   - Observed changes in displayed data and response messages.
+   - Checked for any signs of successful SQL Injection.
+
+7. **Capture Exploitation Process:**
+   - Documented the injection process and modifications made to the payload.
+   - Recorded changes in the application's behavior.
+
+8. **Retrieve Data (Optional):**
+   - Attempted to extract data using payloads like `' UNION SELECT username, password FROM users --`.
+
+9. **Report Findings:**
+   - Notified instructor of successful SQL Injection exploitation.
+   - Provided details of injection points, payloads used, and observed impact.
+
+## Next Steps:
+Proceed to Requirement 5 - Exploit a Broken Access Control vulnerability.
