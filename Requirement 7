@@ -1,5 +1,39 @@
 Lab Notebook
 - *Student Name:** Siham Bashir Ali
 - **Student ID:** ALI22603020
-- **Lab:** Exploiting Broken Authentication on OWASP Juice Shop
-- **Date:** 15/2/2024
+- **Lab:** Exploiting Improper Input Validation on OWASP Juice Shop
+- **Date:** 16/2/2024
+
+## Exploiting Improper Input Validation Vulnerability
+
+1. **Research Improper Input Validation:**
+   - Reviewed OWASP Input Validation Cheat Sheet for understanding.
+
+2. **Explore the Target Page:**
+   - Visited [https://pwning.owasp-juice.shop/part2/improper-input-validation.html](https://pwning.owasp-juice.shop/part2/improper-input-validation.html).
+
+3. **Identify Input Validation Points:**
+   - Identified a search bar and form fields as potential input points.
+
+4. **Attempt Malicious Input:**
+   - Entered special characters, SQL injection payloads, and JavaScript code into the search bar and form fields.
+
+5. **Bypass Client-Side Validation:**
+   - Attempted to bypass client-side validations using browser developer tools.
+
+6. **Manipulate URL Parameters:**
+   - Manipulated URL parameters to inject malicious input (e.g., `?id=<malicious_input>`).
+
+7. **Observe Effects:**
+   - Observed changes in displayed data, error messages, or unexpected behavior.
+
+8. **Document Exploitation Process:**
+   - Recorded the steps taken during input testing.
+   - Documented the input provided and the application's responses.
+
+9. **Report Findings:**
+   - Notified instructor of successful Improper Input Validation exploitation.
+   - Provided details of input points tested, input provided, and observed impact.
+
+## Next Steps:
+Proceed to Requirement 8 - Exploit a Sensitive Data Exposure vulnerability.
