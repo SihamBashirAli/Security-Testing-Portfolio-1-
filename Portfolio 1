@@ -81,6 +81,20 @@ Security Testing Workstation: 2 CPUs, 4 GB RAM, Kali Linux, NAT, Internal Networ
 
 Requirement 2. OWASP Juice Shop Functionality Testing
 
+  FEATURE             |      DESCRIPTION                                                                                 |      INPUTS                          |      OUTPUTS                       |     EXPECTED BEHAVIOUR                                                                       |
+|---------------------|--------------------------------------------------------------------------------------------------|--------------------------------------|------------------------------------|----------------------------------------------------------------------------------------------|
+| User Registration   | Allows users to create an account on the OWASP Juice Shop.                                       | Username, Email, Password            | Success/Failure messages           | Successful registration redirects to the login page.                                         |
+| Login               | Enables users to log in to their accounts.                                                       | Username, Password                   | Success/Failure messages           | Successful login redirects to the user dashboard.                                            |
+| Product Listing     | Displays a list of available products for purchase.                                              | N/A                                  | List of products                   | Products are displayed with details and images.                                              |
+| Product Details     | Shows detailed information about a selected product.                                             | Click on a product                   | Detailed product information       | Displays details like price, description, etc.                                               |
+| Add to Basket       | Allows users to add products to their shopping cart.                                             | Select a product, specify quantity   | Success/Failure messages           | Product is added to the basket.                                                              |
+| Your Basket         | Shows the contents of the user's shopping cart.                                                  | N/A                                  | List of items in the cart          | Displays items with quantity and total cost.                                                 |
+| Checkout            | Initiates the select an address process from the pre-existing addresses or add new address.      | Confirm the selected address.        | List of existing addresses         | Proceeding successfully redirects to adding a new address or continuing to delivery options. |
+| Delivery            |
+| Payment             | Handles payment processing for the user's order.                                                 | Payment details                      | Order confirmation                 | Successful payment redirects to order confirmation.   |
+| User Profile        | Allows users to view and edit their profile information.                                         | Click on the user profile icon       | User details, Edit options         | Edits are saved, and updated details are displayed.   |
+| Security Dashboard  | Displays security-related statistics and information.                                            | Access through the menu              | Security metrics, Recent activities| Provides insights into security status.               |
+
 
 Requirement 3. Exploit a Cross-Site Scripting vulnerability
 
