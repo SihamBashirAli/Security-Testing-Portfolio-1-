@@ -100,6 +100,3 @@
 ### Lab Notebook Conclusion:
 
 The OWASP Juice Shop environment has been successfully set up with the specified IP addresses. Both the OWASP Juice Shop VM and the Kali Linux VM are communicating on the internal network. The next steps involve conducting functionality testing and preparing for security testing as outlined in the lab requirements.
-
-## Next Steps:
-Proceed to Requirement 2 - OWASP Juice Shop Functionality Testing.
